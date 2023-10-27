@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:18.18.0  # Selecciona la versión de Node.js que necesitas
+      - image: circleci/node:16  # Selecciona la versión de Node.js que necesitas
 
     working_directory: ~/repo
 
