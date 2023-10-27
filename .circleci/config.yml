@@ -23,7 +23,7 @@ jobs:
           command: ng test --watch=false --browsers=ChromeHeadless
 
 workflows:
-  version: 3
+  version: 2
   build:
     jobs:
       - build
