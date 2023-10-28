@@ -15,10 +15,10 @@ export class RegisterPageComponent {
 
   public myForm: FormGroup = this.fb.group({
     //? arreglar el servicio e implementarselo. email: [ '', [ Validators.required, Validators.pattern(this.validatorService.emailPattern) ] , [ this.emailValidatorService ] ],
-    email: [ 'vega@hotmail.com.mx', [ Validators.required, Validators.pattern(this.validatorService.emailPattern) ] ,  ],
-    password: [ '123456' ,[Validators.required, Validators.minLength(6) ]  ],
-    password2: [ '123456' ,[Validators.required  ]  ],
-    name: [ 'ferno', [Validators.required, Validators.minLength(3) ]  ]
+    email: [ '', [ Validators.required, Validators.pattern(this.validatorService.emailPattern) ] ,  ],
+    password: [ '' ,[Validators.required, Validators.minLength(6) ]  ],
+    password2: [ '' ,[Validators.required  ]  ],
+    name: [ '', [Validators.required, Validators.minLength(3) ]  ]
   }, {
     validators: [
       this.validatorService.contraseñaSonIguales('password', 'password2')
